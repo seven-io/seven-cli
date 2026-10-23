@@ -1,0 +1,4 @@
+SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+mkdir -p $SCRIPTPATH/build/osx
+
+g++ $SCRIPTPATH/seven-cli.c $SCRIPTPATH/minini_12b/minIni.c -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib -lcurl -o $SCRIPTPATH/build/osx/seven-cli

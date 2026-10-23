@@ -1,0 +1,1 @@
+g++ seven-cli.c minini_12b/minIni.c -lcurl -o build/raspberry/seven-cli
